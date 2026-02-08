@@ -148,8 +148,8 @@
         .about { background: var(--white); }
         .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; }
         .about-image { position: relative; }
-        .about-image-main { background: linear-gradient(135deg, var(--brand-primary), var(--brand-secondary)); border-radius: 24px; aspect-ratio: 4/5; display: flex; align-items: center; justify-content: center; }
-        .about-initials { font-family: var(--font-display); font-size: 8rem; font-weight: 700; color: var(--white); opacity: 0.9; }
+        .about-image-main { background: linear-gradient(135deg, var(--brand-primary), var(--brand-secondary)); border-radius: 24px; aspect-ratio: 4/5; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+        .about-image-main img { width: 100%; height: 100%; object-fit: cover; object-position: center top; }
         .about-badge { position: absolute; bottom: -30px; right: -30px; background: var(--white); padding: 1.5rem 2rem; border-radius: 16px; box-shadow: var(--shadow-lg); }
         .about-badge-number { font-family: var(--font-display); font-size: 2.5rem; font-weight: 700; color: var(--brand-primary); line-height: 1; }
         .about-badge-text { font-size: 0.85rem; color: var(--gray-600); }
@@ -321,7 +321,7 @@
         <div class="container">
             <div class="about-grid">
                 <div class="about-image reveal">
-                    <div class="about-image-main"><span class="about-initials">AM</span></div>
+                    <div class="about-image-main"><img src="ayoolumi.jpg" alt="Ayoolumi Melehon - Founder & Director of The AANDA Group"></div>
                     <div class="about-badge"><div class="about-badge-number">MSc AI</div><div class="about-badge-text">University of Stirling</div></div>
                 </div>
                 <div class="about-content reveal">
