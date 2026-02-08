@@ -27,7 +27,15 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            background: linear-gradient(135deg, var(--off-white) 0%, var(--white) 100%);
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4e8ec 50%, #d5dbe3 100%);
+            background-image: 
+                linear-gradient(135deg, rgba(255,255,255,0.4) 25%, transparent 25%),
+                linear-gradient(225deg, rgba(255,255,255,0.4) 25%, transparent 25%),
+                linear-gradient(45deg, rgba(255,255,255,0.4) 25%, transparent 25%),
+                linear-gradient(315deg, rgba(255,255,255,0.4) 25%, transparent 25%),
+                linear-gradient(135deg, #e8ecf1 0%, #d1d8e0 100%);
+            background-size: 100px 100px, 100px 100px, 100px 100px, 100px 100px, 100% 100%;
+            background-position: 0 0, 50px 0, 50px -50px, 0 50px, 0 0;
             padding: 2rem;
             text-align: center;
         }
